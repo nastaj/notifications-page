@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-jakarta">
+    <main class="p-4">
+      <header class="flex justify-between place-items-center mb-6">
+        <h1 class="text-blue-grayish-dark-2 font-extra-bold text-2xl">
+          Notifications
+          <span class="text-white bg-blue px-3 rounded ml-2">3</span>
+        </h1>
+        <p class="text-m text-blue-grayish">Mark all as read</p>
+      </header>
+
+      <section>
+        <div
+          class="grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4"
+        >
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-mark-webber.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Mark Webber</span
+            >
+            reacted to your recent post
+            <span class="font-extra-bold ml-1">My first tournament today!</span>
+            <span class="text-xs">🔴</span>
+          </p>
+          <p class="text-blue-grayish">1m ago</p>
+        </div>
+
+        <div
+          class="grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4"
+        >
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-angela-gray.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Angela Gray</span
+            >
+            followed you
+            <span class="text-xs">🔴</span>
+          </p>
+          <p class="text-blue-grayish">5m ago</p>
+        </div>
+
+        <div
+          class="grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4"
+        >
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-jacob-thompson.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Jacob Thompson</span
+            >
+            has joined your group
+            <span class="font-extra-bold ml-1 text-blue">Chess Club</span>
+            <span class="text-xs">🔴</span>
+          </p>
+          <p class="text-blue-grayish">1 day ago</p>
+        </div>
+
+        <div class="grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4">
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-rizky-hasanuddin.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Rizky Hasanuddin</span
+            >
+            sent you a private message
+          </p>
+          <p class="text-blue-grayish mb-2">5 days ago</p>
+          <div
+            class="col-start-2 border border-blue-grayish-light-1 rounded p-4"
+          >
+            <p class="text-blue-grayish-dark-1">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-[1fr_2fr_1fr] p-5 rounded-xl mb-4">
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-kimberly-smith.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Kimberly Smith</span
+            >
+            commented on your picture
+          </p>
+          <img
+            class="h-12 justify-self-end"
+            src="/assets/images/image-chess.webp"
+            alt="Chess"
+          />
+          <p class="text-blue-grayish">1 week ago</p>
+        </div>
+
+        <div class="grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4">
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-nathan-peterson.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Nathan Peterson</span
+            >
+            reacted to your recent post
+            <span class="font-extra-bold ml-1"
+              >5 end-game strategies to increase your win rate</span
+            >
+          </p>
+          <p class="text-blue-grayish">2 weeks ago</p>
+        </div>
+
+        <div class="grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4">
+          <img
+            class="row-span-2 h-14 justify-self-center"
+            src="/assets/images/avatar-anna-kim.webp"
+            alt="User avatar"
+          />
+          <p class="text-m text-blue-grayish-dark-1">
+            <span class="text-blue-grayish-dark-2 font-extra-bold mr-1"
+              >Anna Kim</span
+            >
+            left the group
+            <span class="font-extra-bold ml-1 text-blue">Chess Club</span>
+          </p>
+          <p class="text-blue-grayish">2 weeks ago</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
