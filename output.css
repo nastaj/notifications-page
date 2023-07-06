@@ -524,6 +524,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .col-start-2{
   grid-column-start: 2;
 }
@@ -572,10 +576,6 @@ video {
   height: 3.5rem;
 }
 
-.max-w-2xl{
-  max-width: 42rem;
-}
-
 .grid-cols-\[1fr_2fr_1fr\]{
   grid-template-columns: 1fr 2fr 1fr;
 }
@@ -584,28 +584,12 @@ video {
   grid-template-columns: 1fr 3fr;
 }
 
-.grid-cols-\[1fr_4fr\]{
-  grid-template-columns: 1fr 4fr;
-}
-
-.grid-cols-\[1fr_5fr\]{
-  grid-template-columns: 1fr 5fr;
-}
-
 .flex-col{
   flex-direction: column;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .place-items-center{
   place-items: center;
-}
-
-.items-center{
-  align-items: center;
 }
 
 .justify-center{
@@ -664,17 +648,9 @@ video {
   padding: 1.25rem;
 }
 
-.p-1{
-  padding: 0.25rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.align-middle{
-  vertical-align: middle;
 }
 
 .font-jakarta{
@@ -730,14 +706,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:font-extra-bold:hover{
-  font-weight: 800;
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:text-blue:hover{
@@ -746,18 +716,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:col-start-2{
-    grid-column-start: 2;
-  }
-
-  .md\:row-start-1{
-    grid-row-start: 1;
-  }
-
-  .md\:mt-10{
-    margin-top: 2.5rem;
-  }
-
   .md\:mb-3{
     margin-bottom: 0.75rem;
   }
@@ -766,91 +724,8 @@ video {
     display: flex;
   }
 
-  .md\:h-full{
-    height: 100%;
-  }
-
-  .md\:h-1\/2{
-    height: 50%;
-  }
-
-  .md\:h-20{
-    height: 5rem;
-  }
-
-  .md\:h-3\/4{
-    height: 75%;
-  }
-
-  .md\:h-96{
-    height: 24rem;
-  }
-
-  .md\:h-1\/3{
-    height: 33.333333%;
-  }
-
-  .md\:h-screen{
-    height: 100vh;
-  }
-
-  .md\:h-auto{
-    height: auto;
-  }
-
-  .md\:h-fit{
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .md\:h-12{
-    height: 3rem;
-  }
-
-  .md\:max-h-screen{
-    max-height: 100vh;
-  }
-
-  .md\:max-h-96{
-    max-height: 24rem;
-  }
-
-  .md\:max-h-\[\]{
-    max-height: ;
-  }
-
-  .md\:max-h-\[calc\(\)\]{
-    max-height: calc();
-  }
-
-  .md\:max-h-fit{
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-  }
-
-  .md\:max-h-max{
-    max-height: -moz-max-content;
-    max-height: max-content;
-  }
-
-  .md\:max-h-20{
-    max-height: 5rem;
-  }
-
   .md\:max-h-24{
     max-height: 6rem;
-  }
-
-  .md\:max-h-12{
-    max-height: 3rem;
-  }
-
-  .md\:max-h-72{
-    max-height: 18rem;
-  }
-
-  .md\:max-h-32{
-    max-height: 8rem;
   }
 
   .md\:max-h-48{
@@ -861,48 +736,8 @@ video {
     min-height: 100vh;
   }
 
-  .md\:w-0{
-    width: 0px;
-  }
-
-  .md\:w-0\.5{
-    width: 0.125rem;
-  }
-
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
-  .md\:w-1\/3{
-    width: 33.333333%;
-  }
-
-  .md\:w-2\/5{
-    width: 40%;
-  }
-
-  .md\:max-w-7xl{
-    max-width: 80rem;
-  }
-
   .md\:max-w-4xl{
     max-width: 56rem;
-  }
-
-  .md\:max-w-3xl{
-    max-width: 48rem;
-  }
-
-  .md\:max-w-6xl{
-    max-width: 72rem;
-  }
-
-  .md\:justify-self-end{
-    justify-self: end;
-  }
-
-  .md\:rounded{
-    border-radius: 0.25rem;
   }
 
   .md\:rounded-lg{
@@ -913,36 +748,12 @@ video {
     padding: 1.5rem;
   }
 
-  .md\:p-10{
-    padding: 2.5rem;
-  }
-
-  .md\:pt-10{
-    padding-top: 2.5rem;
+  .md\:pt-4{
+    padding-top: 1rem;
   }
 
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .md\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1024px){
-  .lg\:flex{
-    display: flex;
-  }
-
-  .lg\:max-w-4xl{
-    max-width: 56rem;
   }
 }

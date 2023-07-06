@@ -9,9 +9,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Notifications page</title>
 
@@ -27,26 +28,31 @@
     </style>
   </head>
   <body
-    class="font-jakarta md:min-h-screen md:flex flex-col place-items-center justify-center bg-blue-grayish-snow-white"
+    class="font-jakarta md:min-h-screen md:pt-4 md:flex flex-col place-items-center justify-center bg-blue-grayish-snow-white"
   >
-    <main class="p-4 md:p-6 md:max-w-4xl md:rounded-lg bg-white shadow-sm">
+    <main
+      class="notification-board p-4 md:p-6 md:max-w-4xl md:rounded-lg bg-white shadow-sm mb-2"
+    >
       <header class="flex justify-between place-items-center mb-6">
         <h1 class="text-blue-grayish-dark-2 font-extra-bold text-2xl">
           Notifications
-          <span class="text-white bg-blue px-3 rounded ml-2">3</span>
+          <span class="notifications text-white bg-blue px-3 rounded ml-2"
+            >3</span
+          >
         </h1>
-        <a href="#" class="text-m text-blue-grayish hover:text-blue"
+        <a href="#" class="mark-read text-m text-blue-grayish hover:text-blue"
           >Mark all as read</a
         >
       </header>
 
       <section class="md:text-sm">
         <div
-          class="grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          class="notification grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          unread
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-mark-webber.webp"
+            src="assets/images/avatar-mark-webber.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -59,17 +65,18 @@
             <a href="#" class="font-extra-bold ml-1 hover:text-blue"
               >My first tournament today!</a
             >
-            <span class="text-xs">🔴</span>
+            <span class="notification-dot text-xs">🔴</span>
           </p>
           <p class="text-blue-grayish">1m ago</p>
         </div>
 
         <div
-          class="grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          class="notification grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          unread
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-angela-gray.webp"
+            src="assets/images/avatar-angela-gray.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -79,17 +86,18 @@
               >Angela Gray</a
             >
             followed you
-            <span class="text-xs">🔴</span>
+            <span class="notification-dot text-xs">🔴</span>
           </p>
           <p class="text-blue-grayish">5m ago</p>
         </div>
 
         <div
-          class="grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          class="notification grid grid-cols-[1fr_3fr] bg-blue-grayish-snow-white p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          unread
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-jacob-thompson.webp"
+            src="assets/images/avatar-jacob-thompson.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -100,17 +108,17 @@
             >
             has joined your group
             <a href="#" class="font-extra-bold ml-1 text-blue">Chess Club</a>
-            <span class="text-xs">🔴</span>
+            <span class="notification-dot text-xs">🔴</span>
           </p>
           <p class="text-blue-grayish">1 day ago</p>
         </div>
 
         <div
-          class="grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-48"
+          class="notification grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-48"
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-rizky-hasanuddin.webp"
+            src="assets/images/avatar-rizky-hasanuddin.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -134,11 +142,11 @@
         </div>
 
         <div
-          class="grid grid-cols-[1fr_2fr_1fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          class="notification grid grid-cols-[1fr_2fr_1fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-kimberly-smith.webp"
+            src="assets/images/avatar-kimberly-smith.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -151,18 +159,18 @@
           </p>
           <img
             class="h-12 justify-self-end"
-            src="../assets/images/image-chess.webp"
+            src="assets/images/image-chess.webp"
             alt="Chess"
           />
           <p class="text-blue-grayish">1 week ago</p>
         </div>
 
         <div
-          class="grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          class="notification grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-nathan-peterson.webp"
+            src="assets/images/avatar-nathan-peterson.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -180,11 +188,11 @@
         </div>
 
         <div
-          class="grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
+          class="notification grid grid-cols-[1fr_3fr] p-5 rounded-xl mb-4 md:mb-3 md:max-h-24"
         >
           <img
             class="row-span-2 h-14 justify-self-center"
-            src="../assets/images/avatar-anna-kim.webp"
+            src="assets/images/avatar-anna-kim.webp"
             alt="User avatar"
           />
           <p class="text-m text-blue-grayish-dark-1">
@@ -201,11 +209,14 @@
       </section>
     </main>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <footer class="p-4 flex flex-col place-items-center">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor.</a
+        >
+      </p>
+      <p>Coded by <a href="https://github.com/nastaj">Jakub Nasta ❤️</a></p>
+    </footer>
   </body>
 </html>
